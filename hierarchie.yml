@@ -1,0 +1,30 @@
+settings:
+  arrow_color: "black"
+  arrow_style: "line"  # "arrow", "line", "dashed"
+  arrow_width: 2
+  frame_color: "darkblue"
+  frame_width: 2
+  text_color: "black"
+  text_size: 14
+  text_font: "Arial"
+  image_zoom: 0.12
+levels:
+  - grades:
+      - title: "Patron"
+        image: "images/patron.png"
+        subtitle: "Directeur général"
+  - grades:
+      - title: "Développeur"
+        image: "images/dev.png"
+        subtitle: "Responsable technique"
+      - title: "Designer"
+        image: "images/designer.png"
+        subtitle: "Responsable UI/UX"
+    connect_horizontal: True  #  option pour la connexion horizontale
+  - grades:
+      - title: "Apprenti"
+        image: "images/apprenti.png"
+        subtitle: "Stagiaire en formation"
+connections:
+  - from: "Patron"
+    to: ["Apprenti"]  # Connexion explicite du Patron vers Apprenti
